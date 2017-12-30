@@ -4,7 +4,7 @@ var sheetDbUrlGet = function(slug_or_url, options) {
       limit_offset_transposed = addLimitOffsetTransposed(options);
 
   if (options["search"]) {
-    pathQueryString += search(options);
+    pathQueryString += sheetDbSearch(options);
   }
 
   if (limit_offset_transposed != "") {
@@ -33,7 +33,7 @@ var sheetDbUrl = function(urlOrSlug) {
   }
 };
 
-var search = function(options) {
+var sheetDbSearch = function(options) {
   var searchQuery = [],
       searchParams = options["search"];
 

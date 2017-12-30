@@ -7,4 +7,7 @@ SheetDB = {
   },
   version: "1.0"
 }
-module.exports = SheetDB;
+
+if (typeof module !== 'undefined') {
+  module.exports = SheetDB;
+}
