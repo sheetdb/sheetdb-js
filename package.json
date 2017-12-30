@@ -1,6 +1,6 @@
 {
   "name": "sheetdb-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The SheetDB JavaScript Library.",
   "main": "build/sheetdb-js.js",
   "scripts": {
