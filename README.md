@@ -25,7 +25,7 @@ In order to instantiate SheetDB connection you need to give an api id. You can f
 ```js
 import SheetDB from 'sheetdb-js'
 
-SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", {}).then(function(result){
+SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', {}).then(function(result){
   console.log(result);
 }, function(error){
   console.log(error);
@@ -37,7 +37,7 @@ SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", {}).then(function(result
 ```js
 require('sheetdb-js');
 
-SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", {}).then(function(result){
+SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', {}).then(function(result){
   console.log(result);
 }, function(error){
   console.log(error);
@@ -49,7 +49,7 @@ If you don't use any boundler you can import a script from our servers like so:
 ```html
 <script src="//sheetdb.io/js"></script>
 <script>
-SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", {}).then(function(result){
+SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', {}).then(function(result){
   console.log(result);
 }, function(error){
   console.log(error);
@@ -62,7 +62,7 @@ SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", {}).then(function(result
 ```html
 <script src="//sheetdb.io/js"></script>
 <script>
-SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", { search: { age: 24 } }).then(function(result){
+SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', { search: { age: 24 } }).then(function(result){
   console.log(result);
 }, function(error){
   console.log(error);
@@ -75,7 +75,7 @@ SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", { search: { age: 24 } })
 ```html
 <script src="//sheetdb.io/js"></script>
 <script>
-SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", { sheet: 'Sheet2', search: { score: 41 } }).then(function(result){
+SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', { sheet: 'Sheet2', search: { score: 41 } }).then(function(result){
   console.log(result);
 }, function(error){
   console.log(error);
@@ -88,7 +88,7 @@ SheetDB.read("https://sheetdb.io/api/v1/58f61be4dda40", { sheet: 'Sheet2', searc
 ```html
 <script src="//sheetdb.io/js"></script>
 <script>
-SheetDB.write("https://sheetdb.io/api/v1/58f61be4dda40", { sheet: 'Sheet2', data: {player: 'Test', score: 41} }).then(function(result){
+SheetDB.write('https://sheetdb.io/api/v1/58f61be4dda40', { sheet: 'Sheet2', data: {player: 'Test', score: 41} }).then(function(result){
   console.log(result);
 }, function(error){
   console.log(error);
