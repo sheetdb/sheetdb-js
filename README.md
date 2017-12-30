@@ -47,7 +47,7 @@ SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', {}).then(function(result
 If you don't use any boundler you can import a script from our servers like so:
 
 ```html
-<script src="//sheetdb.io/js"></script>
+<script src="//sheetdb.io/api/js"></script>
 <script>
 SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', {}).then(function(result){
   console.log(result);
@@ -57,10 +57,12 @@ SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', {}).then(function(result
 </script>
 ```
 
+There is also Pen you can play with: https://codepen.io/sheetdb/pen/qpmodo
+
 ### Search
 
 ```html
-<script src="//sheetdb.io/js"></script>
+<script src="//sheetdb.io/api/js"></script>
 <script>
 SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', { search: { age: 24 } }).then(function(result){
   console.log(result);
@@ -73,7 +75,7 @@ SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', { search: { age: 24 } })
 ### Multiple spreadsheets
 
 ```html
-<script src="//sheetdb.io/js"></script>
+<script src="//sheetdb.io/api/js"></script>
 <script>
 SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', { sheet: 'Sheet2', search: { score: 41 } }).then(function(result){
   console.log(result);
@@ -86,7 +88,7 @@ SheetDB.read('https://sheetdb.io/api/v1/58f61be4dda40', { sheet: 'Sheet2', searc
 ### Create new rows
 
 ```html
-<script src="//sheetdb.io/js"></script>
+<script src="//sheetdb.io/api/js"></script>
 <script>
 SheetDB.write('https://sheetdb.io/api/v1/58f61be4dda40', { sheet: 'Sheet2', data: {player: 'Test', score: 41} }).then(function(result){
   console.log(result);
